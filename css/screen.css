@@ -1,0 +1,40 @@
+body {
+  font-family: 'Merriweather', serif;
+  width: 45em;
+  margin: 10% auto;
+  line-height: 1.5;
+  color: #333;
+}
+
+#posts {
+  list-style-type: none;
+  margin: 2.5em 2.5em 0;
+  padding: 0;
+}
+
+#posts li {
+  margin-bottom: 1em;
+}
+
+#posts a {
+  font-size: 1.25em;
+}
+
+#posts span {
+  margin-left: 0.25em;
+}
+
+a:link, a:active {
+  color: #00E;
+  border-bottom: 1px solid #00E;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #551A8B;
+  border-bottom: 1px solid #551A8B;
+}
+
+footer {
+  margin-top: 3em;
+}
