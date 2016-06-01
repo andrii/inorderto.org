@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Andrii’s user stories.</title>
+  <title>{{ page.title | default: 'Andrii’s user stories' }}</title>
   <link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
   <link href='/css/screen.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  {% unless page.url == '/' %}
+    {% include all_stories_link.html %}
+  {% endunless %}
+
   {{ content }}
 
   {% if jekyll.environment == 'production' %}
