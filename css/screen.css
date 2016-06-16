@@ -2,7 +2,7 @@ body {
   font-family: 'Merriweather', serif;
   width: 47em;
   margin: 10% auto;
-  line-height: 1.5;
+  line-height: 1.7;
   color: #333;
 }
 
@@ -97,4 +97,35 @@ td {
 
 .skipped {
   background-color: #F0F0F0;
+}
+
+.terminal {
+  background-color: #333;
+  color: white;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  overflow: auto;
+}
+
+.highlighter-rouge {
+  background-color: #F0F0F0;
+  padding: 0.2em 0;
+  border-radius: 3px;
+}
+
+.highlighter-rouge::before,
+.highlighter-rouge::after {
+  content: "\00a0";
+}
+
+code {
+  border-radius: 0.25em;
+}
+
+h2, h3 {
+  margin-top: 3em;
+}
+
+p {
+  margin-top: 2em;
 }
